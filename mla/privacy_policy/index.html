@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Below Emerald Reader – Privacy Policy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Privacy Policy – Below Emerald Reader</h1>
+    <p><strong>Effective Date:</strong> July 2025</p>
+
+    <h2>1. Who We Are</h2>
+    <p>This project is operated by Mads S. Balto for the purpose of anonymous message analysis within the MLA Discord
+        server. Questions or concerns can be directed to:</p>
+    <ul>
+        <li>Mads S. Balto</li>
+        <li><a href="https://www.madsbalto.com">https://www.madsbalto.com</a></li>
+        <li><span id="email"></span></li>
+    </ul>
+
+    <script>
+        const emailElement = document.getElementById("email");
+        const emailArray = [97, 110, 100, 101, 114, 101, 110, 55, 50, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109];
+        emailElement.textContent = String.fromCharCode(...emailArray);
+    </script>
+
+    <h2>2. What Data We Collect</h2>
+    <p>The Below Emerald Reader bot collects and stores the following data from consenting Discord users:</p>
+    <ul>
+        <li>Encrypted message content (AES-256)</li>
+        <li>Hashed user ID (SHA-256)</li>
+        <li>Highest self-assigned rank (as a text label)</li>
+        <li>Deduplication hash for record integrity</li>
+    </ul>
+
+    <p>No usernames, plain user IDs, or message IDs are stored. Messages are collected only from users who explicitly
+        opt in via the <code>/consent</code> command.</p>
+
+    <h2>3. Why We Collect Data</h2>
+    <p>Collected data is used solely to analyze message trends by rank and topic for educational insights and coaching
+        improvement. Data is not shared, sold, or used for any other purpose.</p>
+
+    <h2>4. How Data Is Stored and Protected</h2>
+    <p>
+        All data is encrypted and stored securely in a controlled database.
+        The encryption key is kept separately in an environment-secured configuration file.
+        Reasonable technical and organizational measures are taken to protect data confidentiality.
+    </p>
+
+    <h2>5. Your Rights</h2>
+    <p>At any time, you may:</p>
+    <ul>
+        <li>Withdraw your consent via <code>/consent</code></li>
+        <li>Request deletion of your stored data</li>
+        <li>Request access to your stored messages</li>
+    </ul>
+    <p>All data is deleted automatically upon project conclusion.</p>
+
+    <h2>6. Legal Basis</h2>
+    <p>Processing is based on freely given, explicit consent under GDPR Article 6(1)(a).</p>
+
+    <h2>7. Data Retention</h2>
+    <p>Data is retained only for the duration of the study. Upon completion or upon user withdrawal, all associated data
+        is deleted securely.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated at any time. Users will be notified via the bot if significant changes affect
+        data usage or user rights.</p>
+
+</body>
+
+</html>

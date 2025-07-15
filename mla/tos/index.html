@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Below Emerald Reader - Terms of Service</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Below Emerald Reader - Terms of Service</h1>
+    <p><strong>Effective Date:</strong> July 2025</p>
+
+    <h2>1. Introduction</h2>
+    <p>This Terms of Service ("ToS") applies to anyone interacting with the Below Emerald Reader Discord bot ("the
+        Bot"). By using the <code>/consent</code> command, you agree to these terms.</p>
+
+    <h2>2. What the Bot Does</h2>
+    <p>The Bot collects messages from the <code>#below-emerald</code> channel, but only from users who explicitly opt
+        in. For consenting users, it stores:</p>
+    <ul>
+        <li>Encrypted message content (AES-256)</li>
+        <li>Hashed user ID (SHA-256)</li>
+        <li>Your highest self-assigned rank (as a text label)</li>
+    </ul>
+    <p>Data is used exclusively for anonymized analysis to improve coaching insights.</p>
+
+    <h2>3. Your Rights</h2>
+    <p>At any time, you may:</p>
+    <ul>
+        <li>Withdraw consent via <code>/consent</code></li>
+        <li>Request deletion of your stored data</li>
+        <li>Request to view your stored messages</li>
+    </ul>
+
+    <h2>4. Security Measures</h2>
+    <p>Data is encrypted and stored securely, either locally or in a controlled cloud database. Reasonable efforts are
+        made to protect your information, but absolute security cannot be guaranteed.</p>
+
+    <h2>5. Limitations of Liability</h2>
+    <p>This bot is provided "as-is". The developer (Mads S. Balto) accepts no liability for any damages resulting from
+        its use.</p>
+
+    <h2>6. Contact</h2>
+    <p>If you have questions, concerns, or requests, contact:</p>
+    <ul>
+        <li>Mads S. Balto</li>
+        <li><a href="https://www.madsbalto.com">https://www.madsbalto.com</a></li>
+        <li> <a class="email-target obfuscated-email"></a></li>
+    </ul>
+    <script>
+        const email = document.querySelector(".obfuscated-email");
+        const emailTarget = document.querySelector(".email-target");
+        const myEmail = [97, 110, 100, 101, 114, 101, 110, 55, 50, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109];
+        emailTarget.setAttribute("href", `mailto:${String.fromCharCode(...myEmail)}`);
+        email.textContent = String.fromCharCode(...myEmail);
+    </script>
+    <h2>7. Changes</h2>
+    <p>This Terms of Service may be updated at any time. Users will be notified via the bot if changes affect data
+        usage.</p>
+
+</body>
+
+</html>
